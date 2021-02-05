@@ -6,8 +6,41 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<!-- new Event(); new Event(); -->
+	<bean class="com.xworkz.event.custom.Event" id="event" />
 
-<bean class="com.xworkz.event.custom.Event" id="event"/>
+	<bean class="com.xworkz.event.custom.Event" id="event1" />
 
+
+
+	<bean class="java.lang.String" id="string"></bean>
+
+	<bean class="java.lang.String" id="email"></bean>
+
+	<!--Player p; -->
+	<bean class="com.xworkz.event.custom.Player" id="player">
+		<constructor-arg value="Sachin" />
+		<constructor-arg value="450" />
+	</bean>
+	
+	
+	<bean class="com.xworkz.event.custom.Sport" id="sport">
+	<property name="origin" value="India"></property>
+	<property name="name" value="Hockey"></property>
+	</bean>
+	
+	<bean class="com.xworkz.event.custom.Speaker" id="speaker">
+	<constructor-arg value="JBL"/>
+	<constructor-arg value="1000"/>	
+	<property name="color" value="RED"/>
+	<property name="bluetooth" value="true"/>
+	</bean>
+	
+	
+	<bean class="com.xworkz.event.custom.Alarm" id="alarm">
+	<constructor-arg value="Quartz"/>
+	<constructor-arg value="56"/>
+	<property name="underWarranty" value="true"/>
+	</bean>
 
 </beans>
